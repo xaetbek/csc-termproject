@@ -1,0 +1,85 @@
+body {
+  background-image: url(../images/earth.jpg);
+  font-family: 'Abhaya Libre', serif;
+  font-size: 17px;
+}
+.login_box {
+  border-radius: .65rem;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 90px;
+  backdrop-filter: blur(790px);
+  padding: 20px;
+  text-align: center;
+}
+.registration_box {
+  border-radius: .65rem;
+  width: 350px;
+  height: 620px;
+  margin: auto;
+  margin-top: 75px;
+  backdrop-filter: blur(790px);
+  padding: 15px 30px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.postimage_box {
+  border-radius: .65rem;
+  width: 450px;
+  margin: 40px auto;
+  backdrop-filter: blur(790px);
+  padding: 20px;
+  text-align: center;
+}
+.viewpost_box {
+  border-radius: .65rem;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 80px;
+  backdrop-filter: blur(790px);
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2, h3, p, a {
+  color: #f2f2f2;
+}
+
+#sub {
+  background-color: #007bff;
+  color: white;
+  width: 200px;
+}
+
+#sub:hover {
+  background-color: blue;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color: #f2f2f2;
+}
+
+input[type="checkbox"] {
+  position: right;
+  cursor: pointer;
+  width: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+label {
+  color: #f2f2f2;
+}
+

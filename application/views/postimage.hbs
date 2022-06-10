@@ -1,0 +1,25 @@
+  <body>
+    <div class="postimage_box">
+      <header>
+        <h3>CREATE IMAGE POST</h3>
+      <br>
+      </header>
+      <form method="POST" enctype="multipart/form-data" action="/posts/createPost">
+        <!--Title Section-->
+        <label for="title">TITLE</label><br>
+        <input type="text" id="title" name="title" required/> <br><br>
+        <!--Description Section-->
+        <label for="description">DESCRIPTION</label><br>
+        <input name="description" id="description" required/> <br><br>
+        <!--Image Section-->
+        <label for="image">UPLOAD IMAGE</label>
+        <input type="file" id="image" name="uploadImage" accept="image/*"><br><br>
+        <!--Use Policy Section-->
+        <label for="policy">ACCEPT OUR USE POLICY FOR UPLOADING IMAGES</label>
+        <input type="checkbox" id="policy" name="use_policy" required/>
+        <br><br>
+        <!--Submit Button Section-->
+        <input type="submit" id="sub" value="SUBMIT"/>
+      </form>
+    </div>
+  

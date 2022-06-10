@@ -1,0 +1,15 @@
+<div class="grid">
+    {{#if logged}}
+{{#each data}}
+    <div id="post-{{this.id}}" class="article">
+        <div class="details">
+            <h4 class="card-title">{{title}}</h4>
+            <img id="wo" src="{{thumbnail}}">               
+            <p class="card-subtitle">{{description}}</p>
+        </div>
+        <a href="/post/{{this.id}}" class="anchor-buttons">Post Details</a>
+    </div>
+{{/each}}
+{{/if}}
+</div>
+

@@ -1,0 +1,47 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/css/form.css">
+    <script defer src="../public/js/formValidation.js"></script>
+    <script defer type="text/javascript" src="../routes/users.js"></script>
+    <title>Registration Page</title>
+  </head> --}}
+
+  <body>
+    <div class="registration_box">
+      <header>
+        <h1>REGISTRATION PAGE!</h1>
+      </header>
+      <form name="regForm"  action="/users/registration" onsubmit = "return formValidation();" method="POST" enctype="application/x-www-form-urlencoded">
+        <!--Username Section-->
+        <label id="lblusername" for="username">USERNAME</label><br>
+        <input type="text" id="username" name="username" required="" placeholder="Username" required/>
+        <br><br>
+        <!--Email Section-->
+        <label id="lblemail" for="email">EMAIL</label><br>
+        <input type="email" id="email" name="email" placeholder="Email" required/>
+        <br><br>
+        <!--Password Section-->
+        <label id="lblpasswd" for="passwd">PASSWORD</label><br>
+        <input type="passwd" id="password" name="password" required="" placeholder="Password"/>
+        <br><br>
+        <!--Confirm Password Section-->
+        <label id="lblcpasswd" for="cpasswd">CONFIRM PASSWORD</label><br>
+        <input type="cpasswd" id="cpassword" name="cpassword" required="" placeholder="Confirm Password"/>
+        <br><br>
+        <!--Age Requirement Section-->
+        <label id="lblaoc" for="age_req">ARE YOU 13+ YEARS OF AGE?</label>
+        <input type="checkbox" id="age_req" name="age_req" required/>
+        <br><br>
+        <!--TOS AND Privacy Rules Section-->
+        <label id="lbltos-pr" for="tos-pr"><a href="https://www.google.com">TOS & PRIVACY RULES</a></label>
+        <input type="checkbox" id="tos" name="tos" required/>
+        <br><br>
+        <!--Submit Button Section-->
+        <input type="submit" id="sub" value="SUBMIT"/>
+      </form>
+    </div>
+    
+  {{!-- </body>
+</html> --}}

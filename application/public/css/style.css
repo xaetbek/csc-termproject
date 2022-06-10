@@ -1,0 +1,152 @@
+body {
+  background-image: url(../images/earth.jpg);
+  font-family: 'Abhaya Libre', serif;
+  font-size: 20px;
+}
+
+
+
+/* NAVIGATION BAR SETTINGS*/
+.header {
+  grid-area: header;
+  overflow: hidden;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  font-size: 23px;
+  margin: 10px 15px;
+  box-shadow: 5px 10px 18px grey;
+}
+
+
+.header .nav_home {
+  position: absolute;
+  float: left;
+  display: block;
+  text-align: center;
+  margin: 12px 30px 12px 30px;
+  padding: 6px 28px 6px 28px;
+}
+
+.nav_home img:nth-child(2) {
+  display: none;
+}
+
+.nav_home:hover img:nth-child(1) {
+  display: none;
+}
+
+.nav_home:hover img:nth-child(2) {
+  display: block;
+}
+
+/* Style the topnav links */
+.header a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  border-color: #ccc;
+  margin: 12px 15px 12px 15px;
+  padding: 6px 18px 6px 18px;
+}
+
+/* Change color on hover */
+.header a:hover {
+  color: rgb(5, 1, 29); 
+  background-color: rgb(255, 255, 255); 
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+/* SEARCH CONTAINER AND BUTTON */
+.header .search-container {
+  float: right;
+  height: 15px;
+}
+
+.header input[type=text] {
+  margin: 18px 3px 12px 8px;
+  font-size: 17px;
+  border: none;
+  height: 15px;
+}
+
+.header .search-container button {
+  
+  float: right;
+  margin: 17px 10px 12px 2px;
+  background: #f2f2f2;
+  font-size: 17px;
+  padding: 2px 16px 2px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header .search-container button:hover {
+  background: #ccc;
+}
+
+/*BODY*/
+.left,
+.right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+#flash-message {
+  position: fixed; 
+  left: 50%; 
+  top: 10%; 
+  transform: translate(-50%, 0);
+}
+
+#flash-message div {
+  text-align: center; 
+}
+
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+
+.alert-danger {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
+
+
+/*FOOTER*/
+.footer {
+  position: absolute;
+  grid-area: footer;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  backdrop-filter: blur(30px);
+  width: 98%;
+  bottom: 0;
+  border-radius: .65rem;
+  font-size: 20px;
+}

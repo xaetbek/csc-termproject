@@ -1,0 +1,27 @@
+<div class="header">
+  {{#if logged}}
+  <a id="logout-button" href="/">LOG OUT</a>
+  <a class="{{upload}}" id="link_button2" href="/postimage">POST</a>
+  <a href="/viewpost">VIEW POST</a>
+  <div class="search-container">
+    <form action="/search" id="search_bar" method="POST">
+      <input type="text" placeholder="Search.." name="search" style="width: 910px;">
+      <button class="fa fa-search" type="submit"></button>
+    </form>
+  </div>
+  {{else}}
+  <a href="/login">LOG IN</a>
+  <a href="/postimage">POST</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search" style="width: 1070px;">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+    {{/if}}
+
+  <div><a href="/" class="nav_home {{home}}">
+  <img src="../../public/images/home_white.png" />
+  <img src="../../public/images/home_black.png" />
+  </a></div>
+</div> 

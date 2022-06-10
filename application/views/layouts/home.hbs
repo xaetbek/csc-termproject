@@ -1,0 +1,27 @@
+  {{> header}}
+
+  <body>
+    <div id="grid-container">
+      {{> navbar}}
+      {{{body}}}
+      {{log this}}
+      {{#if logged}}
+      {{> card}}
+      {{#if (emptyObject messages)}}
+      {{> flashmessage}}
+      {{/if}}
+      <script>
+        let ele = document.getElementById('logout-button'); 
+        if (ele) {
+          ele.onclick = (even) => {
+            fetch('/users/logout', {
+              method: "POST"
+            })
+            .then((data) => {
+              location.replace('/'); 
+            })
+          }
+        }
+      </script>
+      {{/if}}
+  {{> footer}}
